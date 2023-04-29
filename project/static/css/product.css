@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+
+.det {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  direction: rtl;
+  padding: 50px;
+}
+.det .imgs {
+  display: flex;
+  flex-direction: row-reverse;
+  /* width: 30%; */
+  height: 100%;
+  justify-content: space-between;
+}
+.det .imgs .gmi {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  justify-content: center;
+}
+.det .imgs .gmi img {
+  width: 260px;
+  max-height: 100%;
+}
+.det .imgs .imges {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.det .imgs .imges .img {
+  border: 2px solid rgb(235, 236, 240);
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.det .imgs .imges .img:hover,
+.det .imgs .imges .img.activeimg {
+  border: 2px solid rgb(56, 102, 223);
+}
+.det .imgs .imges .img img {
+  max-height: 85%;
+  max-width: 85%;
+}
+
+.dets .brand,
+.path a {
+  font-size: 1.2em;
+  text-decoration: underline 0.5px !important;
+}
+.dets .memory,
+.quantity {
+  font-size: 1.2em;
+}
+.dets .bio {
+  font-size: 1.5em;
+  line-height: 1em;
+  padding: 5px 0px;
+  text-align: justify;
+}
+.pres {
+  font-size: 1.3em;
+}
+.det .lmemory {
+  width: 450px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.det .lmemory .mory.activem {
+  border: rgb(56, 102, 223) solid 1px;
+  color: rgb(56, 102, 223) !important;
+}
+.det .lmemory .mory {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(226, 229, 241) solid 1px;
+  color: #404553;
+  border-radius: 2px;
+  padding: 8px 16px;
+  width: 140px;
+  height: 50px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.det .lmemory .mory.cl {
+  justify-content: space-around !important;
+}
+.det .lmemory .mory img {
+  width: 50px;
+}
+.dets {
+  width: 40%;
+  padding: 0px 20px;
+}
+.reat {
+  width: 25%;
+  padding-right: 12px;
+  border-right: 1px solid rgb(240, 242, 248);
+}
+.reat .modelnum,
+.fsz {
+  font-size: 1.1em;
+}
+.oreder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.oreder a {
+  width: 300px;
+  height: 50px;
+  background-color: rgb(56, 102, 223);
+  color: #fff !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.sel {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.tp20 {
+  height: 10px;
+  background-color: #eaeded;
+}
+.detlats {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  direction: rtl;
+  padding: 5px 50px;
+  font-family: "Cairo", sans-serif;
+  /* font-family: 'El Messiri', sans-serif; */
+}
+.detlats .info {
+  max-width: 60%;
+}
+.detlats .mori {
+  width: 40%;
+  padding-right: 12px;
+  border-right: 1px solid rgb(240, 242, 248);
+}
+.log {
+  color: #fff !important;
+}
+.border {
+  border-right: 1px solid rgb(240, 242, 248);
+  width: 1px;
+  height: 100%;
+}
+.dsc{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .dsc{
+        display: block ;
+    }
+    .dsm{
+        display: none !important;
+    }
+    .det {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .det .imgs .gmi img {
+        width: 245px;
+        margin-right: 2px;
+    }
+    .brand,
+    .path a {
+    font-size: 1.5em;
+    text-decoration: none !important;
+    }
+    .bio{
+        font-size: 1.1em;
+        text-align: justify;
+    }
+}
