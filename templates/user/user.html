@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/user.css' %}" />
+
+{% endblock css %}
+
+{% block body %}
+
+
+  <div class="linkes">
+    <div class="fln">
+        <a href="{% url 'user:information' %}" class="link ac">
+            <div class="fimg"><img src="{% static 'img/icons/user.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">ملعوماتي</span>
+                <div class="bio">تعديل معلومات الاتصال والاسم والاهتمامات</div>
+            </div>
+        </a>
+            
+        <a href="{% url 'user:delivery_address' %}" class="link">
+            <div class="fimg"><img src="{% static 'img/icons/address.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">عنوان التوصيل</span>
+                <div class="bio">تعديل عنوان شحن المنتجات</div>
+            </div>
+        </a>
+            
+        <a href="{% url 'user:previous_orders' %}" class="link">
+            <div class="fimg"><img src="{% static 'img/icons/shopping-bag.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">طلباتي السابقة</span>
+                <div class="bio">اطلع على الطلبات التامة السابقة</div>
+            </div>
+        </a>
+            
+        <a href="{% url 'user:preferences' %}" class="link">
+            <div class="fimg"><img src="{% static 'img/icons/star.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">التفضيلات</span>
+                <div class="bio">اطلع على المنتجات المفضلة لك</div>
+            </div>
+        </a>
+            
+        <a href="{% url 'user:previous_baskets' %}" class="link">
+            <div class="fimg"><img src="{% static 'img/icons/shopping-cart.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">السلات السابقة</span>
+                <div class="bio">اطلع على السلات التي قمت بتعبئتها سابقاً</div>
+            </div>
+        </a>
+            
+        <a href="{% url 'user:balance' %}" class="link">
+            <div class="fimg"><img src="{% static 'img/icons/gift-card.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">الرصيد وبطاقات الهدايا</span>
+                <div class="bio">اطلع على رصيدك والاستفادة من بطاقات الهدايا</div>
+            </div>
+        </a>
+
+        <a href="{% url 'user:view_products' %}" class="link">
+            <div class="fimg"><img src="{% static 'img/icons/product-overview.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">منتجات شاهدتها</span>
+                <div class="bio">اطلع على جميع المنتجات التي شهادتها</div>
+            </div>
+        </a>
+
+        <a href="{% url 'user:customers_service' %}" class="link">
+            <div class="fimg"><img src="{% static 'img/icons/customer-service.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname">خدمة العملاء</span>
+                <div class="bio">احصل على المساعدة من خلال خدمة العملاء</div>
+            </div>
+        </a>
+    </div>
+   </div>
+
+
+
+  <br><br><br>
+
+{% endblock body %}
+
+
+
+

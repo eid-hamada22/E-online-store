@@ -1,0 +1,341 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>dalilips.com</title>
+    {% comment %} <link rel="shortcut icon" href="img/products/si.png" />
+    <link rel="apple-touch-icon" href="img/products/si.png" /> {% endcomment %}
+    <meta name="copyright" content="daliliPs.com" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/product-swiper.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+
+
+    <nav class="navbar  navbar-dark bg-dark fixed-top"style="height: 90px !important;" onmouseover="hide()">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{% static 'img/logoard.png' %}" width="160px" alt="" srcset="" /></a>
+          <div class="border">.</div>
+          <a href="" class="log" style="color: #fff !important;">
+            <i class="fa fa-user-o" aria-hidden="true"></i>  تسجيل الدخول 
+          </a>
+          <input type="text" id="nav_serc" class="nav_serc" autocomplete="off" onchange="change()" placeholder="عن ماذا تبحث؟">
+          <a class="sdadasd" href="" style="color: #fff !important;"type="button" data-bs-toggle="offcanvas" data-bs-target="#basket" aria-controls="offcanvasNavbar">عربة التسوق
+            <div class="cartIconContainer">
+              
+              <i class="fa fa-shopping-basket" aria-hidden="true" alt="cart" width="20px" height="20px"></i>
+              <div style="transition: opacity 300ms ease-in-out 0s; opacity: 1;"><div class="counter">1</div></div>
+            </div>
+          </a>
+          <div class="offcanvas offcanvas-end off2" tabindex="-1" id="basket" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    سلة التسوق
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-black">
+                <div class="prodcts">
+                  <div class="qunty"><div>X1</div> <span><img src="{% static 'img/icons/arrow-up.png' %}" alt=""><img src="{% static 'img/icons/arrow-down.png' %}" alt=""></span></div>
+                  <div class="prdq">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg' %}" alt=""></div>
+                    <div class="tex">
+                     <div class="fname"> <div class="name">سماعة ابل ايربود برو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالث apple Airbods pro3  </div></div>
+                      <div class="prdasd">
+                      <div class="prs" style="width: auto;"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                    </div>
+                    <div class="cpname">apple</div>
+
+                    </div>
+                  </div>
+                    <div class="delt"><span><img src="{% static 'img/icons/trash-can.png' %}" alt=""></span></div>
+                </div>
+                <br>
+                <div class="prodcts">
+                  <div class="qunty"><div>X1</div> <span><img src="{% static 'img/icons/arrow-up.png' %}" alt=""><img src="{% static 'img/icons/arrow-down.png' %}" alt=""></span></div>
+                  <div class="prdq">
+                    <div class="img"><img src="{% static 'img/products/712yl2wTDbL._AC_UY218_.jpg' %}" alt=""></div>
+                    <div class="tex">
+                     <div class="fname"> <div class="name">سماعة ابل ايربود برو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالث apple Airbods pro3  </div></div>
+                      <div class="prdasd">
+                      <div class="prs" style="width: auto;"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                    </div>
+                    <div class="cpname">apple</div>
+
+                    </div>
+                  </div>
+                    <div class="delt"><span><img src="{% static 'img/icons/trash-can.png' %}" alt=""></span></div>
+                </div>
+                <br>
+                <div class="prodcts">
+                  <div class="qunty"><div>X1</div> <span><img src="{% static 'img/icons/arrow-up.png' %}" alt=""><img src="{% static 'img/icons/arrow-down.png' %}" alt=""></span></div>
+                  <div class="prdq">
+                    <div class="img"><img src="{% static 'img/products/712yl2wTDbL._AC_UY218_.jpg' %}" alt=""></div>
+                    <div class="tex">
+                     <div class="fname"> <div class="name">سماعة ابل ايربود برو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالث apple Airbods pro3  </div></div>
+                      <div class="prdasd">
+                      <div class="prs" style="width: auto;"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                    </div>
+                    <div class="cpname">apple</div>
+
+                    </div>
+                  </div>
+                    <div class="delt"><span><img src="{% static 'img/icons/trash-can.png' %}" alt=""></span></div>
+                </div>
+                <br>
+                <div class="prodcts">
+                  <div class="qunty"><div>X1</div> <span><img src="{% static 'img/icons/arrow-up.png' %}" alt=""><img src="{% static 'img/icons/arrow-down.png' %}" alt=""></span></div>
+                  <div class="prdq">
+                    <div class="img"><img src="{% static 'img/products/712yl2wTDbL._AC_UY218_.jpg' %}" alt=""></div>
+                    <div class="tex">
+                     <div class="fname"> <div class="name">سماعة ابل ايربود برو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالث apple Airbods pro3  </div></div>
+                      <div class="prdasd">
+                      <div class="prs" style="width: auto;"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                    </div>
+                    <div class="cpname">apple</div>
+
+                    </div>
+                  </div>
+                    <div class="delt"><span><img src="{% static 'img/icons/trash-can.png' %}" alt=""></span></div>
+                </div>
+                <br>
+                <div class="prodcts">
+                  <div class="qunty"><div>X1</div> <span><img src="{% static 'img/icons/arrow-up.png' %}" alt=""><img src="{% static 'img/icons/arrow-down.png' %}" alt=""></span></div>
+                  <div class="prdq">
+                    <div class="img"><img src="{% static 'img/products/712yl2wTDbL._AC_UY218_.jpg' %}" alt=""></div>
+                    <div class="tex">
+                     <div class="fname"> <div class="name">سماعة ابل ايربود برو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالث apple Airbods pro3  </div></div>
+                      <div class="prdasd">
+                      <div class="prs" style="width: auto;"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                    </div>
+                    <div class="cpname">apple</div>
+
+                    </div>
+                  </div>
+                    <div class="delt"><span><img src="{% static 'img/icons/trash-can.png' %}" alt=""></span></div>
+                </div>
+                <br>
+                <div class="prodcts">
+                  <div class="qunty"><div>X1</div> <span><img src="{% static 'img/icons/arrow-up.png' %}" alt=""><img src="{% static 'img/icons/arrow-down.png' %}" alt=""></span></div>
+                  <div class="prdq">
+                    <div class="img"><img src="{% static 'img/products/712yl2wTDbL._AC_UY218_.jpg' %}" alt=""></div>
+                    <div class="tex">
+                     <div class="fname"> <div class="name">سماعة ابل ايربود برو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالثبرو الاصدرا الثالث apple Airbods pro3  </div></div>
+                      <div class="prdasd">
+                      <div class="prs" style="width: auto;"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                    </div>
+                    <div class="cpname">apple</div>
+
+                    </div>
+                  </div>
+                    <div class="delt"><span><img src="{% static 'img/icons/trash-can.png' %}" alt=""></span></div>
+                </div>
+            </div>
+            <div class="offcanvas-header">
+              <a href="#" lass="offcanvas-title" style="display: flex;align-items: center;" ><button  class="paybtn"> <img src="{% static 'img/icons/credit-card.png' %}" width="20px" alt=""> انتقل  لصفحة الدفع</button></a>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  المجموع : 5000ش
+              </h5>
+          </div>
+        </div>
+            
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      القائمة
+                  </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body text-black">
+                  <ul class="navbar-nav text-black justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link text-black active" aria-current="page" href="index.php" style="float: right;">البحث <i class="fa fa-search" style="font-size: 20px;" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-black" href="myb.php" style="float: right;">نشاطي التجاري <i class="fa fa-briefcase" style="font-size: 20px;" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-black " href="sectorlist.php" style="float: right;">قائمة القطاعات <i class="fa fa-list" style="font-size: 20px;" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-black" href="history.php" style="float: right;">سجل البحث <i class="fa fa-history" style="font-size: 20px;" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-black" href="fav.php" style="float: right;">المحفوظات <i class="fa fa-bookmark" style="font-size: 20px;" aria-hidden="true"></i></a>
+                      </li>
+
+                  </ul>
+
+                  <form class="d-flex">
+                  <a href="index.php">
+                      <a href="index.php" class="btn btn-outline-success" type="submit">
+                          بحث
+                      </a>
+                  
+                      <a href="index.php" class="form-control me-2" type="search" dir="rtl" placeholder="بحث سريع" aria-label="Search"></a>
+                  </a>
+                  </form>
+
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link" href="Privacy_policy.html" style="float: right;">سياسة الخصوصية <i class="fa fa-file-text" style="font-size: 20px;" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link " href="tt.html" style="float: right;">شروط الأستخدام <i class="fa fa-file-text-o" style="font-size: 20px;" aria-hidden="true"></i></a>
+                      </li>
+                  </ul>
+                  
+                  <br>
+                  <center><img src="{% static 'img/products/logoard.png' %}" alt="" srcset=""></center>
+              </div>
+          </div>
+      </div>
+
+  </nav>
+  
+
+      <br class="dsc">
+  <nav class="nav2" >
+        <div class="nv1">
+          <div class="b12 cb0 "   onmouseover="b12(0)">
+              <span class="b12tcat"><i class="fa fa-arrow-down" aria-hidden="true"></i> الكل</span>
+            </div>
+          <div class="b12 cb1"  onmouseover="b12(1)">
+            <span>الاجهزة الذكية</span>
+          </div>
+          <div class="b12 cb2"  onmouseover="b12(2)">
+            <span>الابتوبات وملحقاتها</span>
+          </div>
+          <div class="b12 cb3"  onmouseover="b12(3)">
+            <span> الاجهزة المنزلية</span>
+          </div>
+          <div class="b12 cb4"  onmouseover="b12(4)">
+            <span>المكياج</span>
+          </div>
+          <div class="b12 cb5"  onmouseover="b12(5)">
+            <span>الجمال والعناية</span>
+          </div>
+          <div class="b12 cb6"  onmouseover="b12(6)">
+            <span>الرياضة</span>
+          </div>
+          <div class="b12 cb7"  onmouseover="b12(7)">
+            <span>العاب الفيديو</span>
+          </div>
+          <div class="b12 cb8"  onmouseover="b12(8)">
+            <span>الكتب</span>
+          </div>
+          <div class="b12 cb9"  onmouseover="b12(9)">
+            <span>العطور والبخور</span>
+          </div>
+          <div class="b12 cb10"  onmouseover="b12(10)">
+            <span> التصوير</span>
+          </div>
+          <div class="b12 cb10"  onmouseover="b12(11)">
+            <span> الالعاب</span>
+          </div>
+        </div>
+
+  </nav>
+  <div class="nv2">
+    <div class="bb21 b12for1 cb1" onmousewheel="hide()"  id="cb1" style="display: none;" >
+      <div class="tsadsad">اجهزة الكمبيوتر والابتوب وملحقاتها</div>
+      <div class="dwad">
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/Apple-Prd-Mac.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/apple-macbook-air-13-m1-8gb-256gb-ssd-laptop.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/audper.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/3090.png' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/scraan1.png' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/wacom.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/keybord.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/pxn.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/Apple-Prd-Mac.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/apple-macbook-air-13-m1-8gb-256gb-ssd-laptop.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/audper.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/3090.png' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/scraan1.png' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/wacom.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/keybord.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/pxn.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+
+      </div>
+      <div class="sadow" onmouseover="hide()"></div>
+    </div>
+    <div class="bb21 b12for2 cb2" onmousewheel="hide()" id="cb2" style="display: none;" >
+      <div class="tsadsad">العاب الفيديو</div>
+      <div class="dwad">
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/games.png' %}" alt=""><span>العاب الفيديو</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/gmchare.png' %}" alt=""><span>العاب الفيديو</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/ps5-2.png' %}" alt=""><span>العاب الفيديو</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/scraan1.png' %}" alt=""><span>العاب الفيديو</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/pxn.jpg' %}" alt=""><span>العاب الفيديو</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/ps5-2.png' %}" alt=""><span>العاب الفيديو</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/gmchare.png' %}" alt=""><span>العاب الفيديو</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/games.png' %}" alt=""><span>العاب الفيديو</span></a></div>
+      </div>
+      <div class="sadow" onmouseover="hide()"></div>
+    </div>
+    <div class="bb21 b12for3 cb3" onmousewheel="hide()" id="cb3" style="display: none;" >
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+      <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg' %}" alt=""><span>معدات التصوير</span></a></div>
+
+    </div>
+    <div class="bb21 b12for4 cb4" onmousewheel="hide()" id="cb4"  style="display: none;"></div>
+    <div class="bb21 b12for5 cb5" onmousewheel="hide()" id="cb5"  style="display: none;"></div>
+    <div class="bb21 b12for6 cb6" onmousewheel="hide()"  id="cb6" style="display: none;"></div>
+    <div class="bb21 b12for7 cb7" onmousewheel="hide()" id="cb7"  style="display: none;"></div>
+    <div class="bb21 b12for8 cb8" onmousewheel="hide()" id="cb8"  style="display: none;">
+      <div class="tsadsad">عطور رجالية ونسائية</div>
+      <div class="dwad">
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/chanel.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/dior.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/audper.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/aud.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/adam.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/dove.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/frida.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+        <div class="cr"><a href=""><img src="{% static 'img/categorys/chanel.jpg' %}" alt=""><span>عطور رجالية ونسائية</span></a></div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed" data-bs-toggle="offcanvas" data-bs-target="#basket" aria-controls="offcanvasNavbar">
+    <div  class="nav__link">
+      <div class="cartIconContainer">
+    <img class="nav__icon" src="{% static 'img/icons/shopping-cart.png' %}" alt="" style="width: 3rem;height: auto;">
+        <!-- <i class="fa fa-shopping-basket" aria-hidden="true" alt="cart" width="20px" height="20px"></i> -->
+        <div style="transition: opacity 300ms ease-in-out 0s; opacity: 1;"><div class="counter" style="top: 0px; right: -14px;width: 20px;height: 20px;">1</div></div>
+      </div>
+        
+    </div>
+  </div>
+
+

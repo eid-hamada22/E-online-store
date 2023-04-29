@@ -1,0 +1,284 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+<div class="nav__menu" id="nav-menu">
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="" class="nav__link active-link">
+                <img class="nav__icon" src="{% static 'img/icons/home.png' %}" alt="">
+                <span class="nav__name ">الرئيسية</span>
+            </a>
+        </li>
+        
+        <li class="nav__item" onclick='cat()'>
+            <span href="#" class="nav__link">
+                <img class="nav__icon" id="chang" src="{% static 'img/icons/app.png' %}" data-original="{% static 'img/icons/app.png' %}" data-orchangeiginal="{% static 'img/icons/down-arrow.png' %}" alt="">
+                <span class="nav__name">الاقسام</span>
+            </span>
+        </li>
+
+        <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img class="nav__icon" src="{% static 'img/icons/price-tag.png' %}" alt="">
+                <span class="nav__name">العروض</span>
+            </a>
+        </li>
+
+        <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img class="nav__icon" src="{% static 'img/icons/user.png' %}" alt="">
+                <span class="nav__name">حسابي</span>
+            </a>
+        </li>
+
+        <li class="nav__item">
+            <div  class="nav__link"  data-bs-toggle="offcanvas" data-bs-target="#basket" aria-controls="offcanvasNavbar">
+              <div class="cartIconContainer">
+
+
+            <img class="nav__icon" src="{% static 'img/icons/shopping-cart.png' %}" alt="" style="width: 1.8rem;height: auto;">
+                <!-- <i class="fa fa-shopping-basket" aria-hidden="true" alt="cart" width="20px" height="20px"></i> -->
+                <div style="transition: opacity 300ms ease-in-out 0s; opacity: 1;"><div class="counter" style="top: 0px; right: -14px;width: 20px;height: 20px;">1</div></div>
+              </div>
+                <span class="nav__name">سلة التسوق</span>
+            </a>
+        </li>
+    </ul>
+    <div class="category" id="category" style="display: none;">
+      <div class="right">
+        <div class="cat actcat" onclick="lchanf(1)">الالكترونيات</div>
+        <div class="cat" onclick="lchanf(2)">العاب الفيديو</div>
+        <div class="cat" onclick="lchanf(3)">الجمال والعناية</div>
+        <div class="cat" onclick="lchanf(4)">الإلعاب</div>
+        <div class="cat" onclick="lchanf(5)">الكتب</div>
+        <div class="cat" onclick="lchanf(6)">العطور والبخور</div>
+        <div class="cat" onclick="lchanf(7)">الالكترونيات</div>
+        <div class="cat" onclick="lchanf(8)">العاب الفيديو</div>
+        <div class="cat" onclick="lchanf(9)">الجمال والعناية</div>
+        <div class="cat" onclick="lchanf(10)">الإلعاب</div>
+        <div class="cat" onclick="lchanf(11)">الكتب</div>
+        <div class="cat" onclick="lchanf(12)">العطور والبخور</div>
+      </div>
+      <div class="left">
+        <div class="cf catfor1">
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Apple-Prd-iPhone-13.jpg" alt=""></div><span>الهواتف</span></div>
+
+        </div>
+        <div class="cf catfor2" style="display: none;">
+          <div class="cfitem"><div class="icfimg"><img src="img/products/games.png" alt=""></div><span>العاب الفيديو</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/games.png" alt=""></div><span>العاب الفيديو</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/games.png" alt=""></div><span>العاب الفيديو</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/games.png" alt=""></div><span>العاب الفيديو</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/games.png" alt=""></div><span>العاب الفيديو</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/games.png" alt=""></div><span>العاب الفيديو</span></div>
+
+        </div>
+        <div class="cf catfor3" style="display: none;">
+          <div class="cfitem"><div class="icfimg"><img src="img/products/makeup-kit-products-png-png-all-makeup-products-png-1417_1063 (1).png" alt=""></div><span>المكياج</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/makeup-kit-products-png-png-all-makeup-products-png-1417_1063 (1).png" alt=""></div><span>المكياج</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/makeup-kit-products-png-png-all-makeup-products-png-1417_1063 (1).png" alt=""></div><span>المكياج</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/makeup-kit-products-png-png-all-makeup-products-png-1417_1063 (1).png" alt=""></div><span>المكياج</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/makeup-kit-products-png-png-all-makeup-products-png-1417_1063 (1).png" alt=""></div><span>المكياج</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/makeup-kit-products-png-png-all-makeup-products-png-1417_1063 (1).png" alt=""></div><span>المكياج</span></div>
+        </div>
+        <div class="cf catfor4" style="display: none;">
+          <div class="cfitem"><div class="icfimg"><img src="img/products/21319_alt1.jpg" alt=""></div><span>الالعاب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/21319_alt1.jpg" alt=""></div><span>الالعاب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/21319_alt1.jpg" alt=""></div><span>الالعاب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/21319_alt1.jpg" alt=""></div><span>الالعاب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/21319_alt1.jpg" alt=""></div><span>الالعاب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/21319_alt1.jpg" alt=""></div><span>الالعاب</span></div>
+        </div>
+        <div class="cf catfor5" style="display: none;">
+          <div class="cfitem"><div class="icfimg"><img src="img/products/81gP4fFhsbL.jpg" alt=""></div><span>الكتب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/81gP4fFhsbL.jpg" alt=""></div><span>الكتب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/81gP4fFhsbL.jpg" alt=""></div><span>الكتب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/81gP4fFhsbL.jpg" alt=""></div><span>الكتب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/81gP4fFhsbL.jpg" alt=""></div><span>الكتب</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/81gP4fFhsbL.jpg" alt=""></div><span>الكتب</span></div>
+        </div>
+        <div class="cf catfor6" style="display: none;">
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Y0785220_F078524009_E01_GHC.jpg" alt=""></div><span>العطور والبخور</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Y0785220_F078524009_E01_GHC.jpg" alt=""></div><span>العطور والبخور</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Y0785220_F078524009_E01_GHC.jpg" alt=""></div><span>العطور والبخور</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Y0785220_F078524009_E01_GHC.jpg" alt=""></div><span>العطور والبخور</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Y0785220_F078524009_E01_GHC.jpg" alt=""></div><span>العطور والبخور</span></div>
+          <div class="cfitem"><div class="icfimg"><img src="img/products/Y0785220_F078524009_E01_GHC.jpg" alt=""></div><span>العطور والبخور</span></div>
+        </div>
+        <div class="cf catfor7" style="display: none;">الالكsadترونsadيات</div>
+        <div class="cf catfor8" style="display: none;">العاب الفsadيدsadsadيو</div>
+        <div class="cf catfor9" style="display: none;">الجمال والعناية</div>
+        <div class="cf catfor10" style="display: none;">الإلعsadاب</div>
+        <div class="cf catfor11" style="display: none;">الكتب</div>
+        <div class="cf catfor12" style="display: none;">العطور والsadsadبخور</div>
+      </div>
+    </div>
+</div>
+
+<footer>
+    <div class="prds">
+      <div class="f1">
+        <span>الالكترونيات</span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+      <div class="f1">
+        <span>العاب الفيديو</span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+      <div class="f1">
+        <span>الاحذية</span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+      <div class="f1">
+        <span>الساعات والخواتم</span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+      <div class="f1">
+        <span>الجمال والعناية</span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+      <div class="f1">
+        <span>الإلعاب</span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+      <div class="f1">
+        <span>الكتب </span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+      <div class="f1">
+        <span>العطور والبخور</span>
+        <div class="footer2"  >
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+          <div class="f2"><a href="">العطور والبخور</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="b1 co">
+        <img src="img/logoard.png" alt="">
+        <div class="text20" dir="rtl">
+          موقع gaza.net لخدمات الشراء عبر الانترنت نقدم لك موقعنا بكل حب وامل. 
+        </div>
+      </div>
+      <div class="b1 l">
+        <h2>الروابط</h2>
+        <div class="link">
+          <a href="index.html">الصفحة الرئيسة</a>
+          <a href="index.html#how_us">من نحن</a>
+          <a href="all_p.html">المنتجات</a>
+          <a href="index.html#contact">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="b1 l">
+        <h2>الروابط</h2>
+        <div class="link">
+          <a href="index.html">الصفحة الرئيسة</a>
+          <a href="index.html#how_us">من نحن</a>
+          <a href="all_p.html">المنتجات</a>
+          <a href="index.html#contact">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="b1 asdd">
+        <h2>تواصلو معنا</h2>
+        <div class="link">
+          <a href="">info@gaza.net</a>
+          <ul class="sci3">
+            <li>
+              <a href="#"><img src="img/facebook.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/twitter.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/instagram.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tf3">
+        &copy; All rights reserved | جميع الحقوق محفوظة 
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

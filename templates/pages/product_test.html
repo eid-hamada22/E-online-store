@@ -1,0 +1,374 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+{% load self_teg %}
+<link rel="stylesheet" href="{% static 'css/Pcategory.css' %}" />
+<link rel="stylesheet" href="{% static 'css/product.css' %}" />
+
+
+{% endblock css %}
+
+{% block body %}
+    <div class="det">
+      <div class="path dsc"><a href="">{{prd.category.pcategory.ar_name}}</a> > <a href="">{{prd.category.ar_name}}</a></div>
+      <a href="" class="brand dsc">{{prd.Brand}}</a>
+      <div class="bio dsc">{{prd.bio}}</div>
+
+        <div class="imgs">
+          <div class="gmi">
+            <img src="{{rel.img.url}}" alt="">
+          </div>
+          <div class="imges">
+            <div class="img activeimg" ><img src="{{rel.img.url}}" alt="" onmouseover="imgSlider('{{rel.img.url}}')"></div>
+            <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png' %}" alt="" onmouseover="imgSlider('{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png' %}')"></div>
+            <div class="img"><img src="{% static 'img/products/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg' %}" alt="" onmouseover="imgSlider('{% static 'img/products/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg' %}')"></div>
+            <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg' %}" alt="" onmouseover="imgSlider('{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg' %}')"></div>
+          </div>
+        </div>
+        <div class="dets">
+          <div class="path dsm"><a href="">{{prd.category.pcategory.ar_name}}</a> > <a href="">{{prd.category.ar_name}}</a></div>
+          <a href="" class="brand dsm">{{prd.Brand}}</a>
+          <div class="bio dsm">{{prd.ar_name}}</div>
+          {% if prd.lprice %}
+            <div class="lpres">السعر السابق: <span style="  text-decoration: solid;text-decoration-line: line-through;">{{prd.lprice}}₪</span> ,الخصم : <span style="  font-weight: 700; color: #38ae04;">{{prd.Discount}}%</spans></div>
+          {% endif %}
+          <div class="pres">السعر الحالي : {{prd.price}}₪</div>
+          {% if prd.Pproduct %}
+            {% if prd.det.type == 'phones'  %}
+              <div class="memory">الذاكرة الداخلية:</div>
+              <div class="lmemory">
+                {% for item  in anther_pre_rel %}
+                  {% if item.version == rel.version and item.model_color == rel.model_color %}
+                    <a href="{% get_href_from_rel prd.det.type item.id %}" class="mory {% if item.id == rel.id %}activem{% endif %}"> {{item.internal_memory}} جيجابايت</a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="memory">اللون:</div>
+              <div class="lmemory" style="margin-top: 15px;">
+                  {% for item  in anther_pre_rel %}
+                    {% if item.version == rel.version and item.internal_memory == rel.internal_memory %}
+                      <a href="{% get_href_from_rel prd.det.type item.id %}" class="mory cl {% if item.id == rel.id %}activem{% endif %} ">
+                      <img src="{{item.img.url}}" alt="">
+                      </a>
+                    {% endif %}
+                  {% endfor %}
+              </div>
+              <br>
+              <div class="memory">النسخة:</div>
+              <div class="lmemory" style="margin-top: px;">
+                {% for item  in anther_pre_rel %}
+                  {% if item.model_color == rel.model_color and item.internal_memory == rel.internal_memory %}
+                    <a href="{% get_href_from_rel prd.det.type item.id %}" class="mory {% if item.id == rel.id %}activem{% endif %}">نسخة {{item.version}} </a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endif %}
+
+        </div>
+        <div class="reat">
+          <div class="modelnum">رقم المنتج : {{prd.Product_number}}</div>
+          {% if prd.lprice %}
+            <div class="lpres">السعر السابق: <span style="  text-decoration: solid;text-decoration-line: line-through;">{{prd.lprice}}₪</span> ,الخصم : <span style="  font-weight: 700; color: #38ae04;">{{prd.Discount}}%</spans></div>
+          {% endif %}            <div class="pres">السعر الحالي : {{prd.price}}₪</div>
+            <div class="fsz">شامل الضريبة والجمارك</div>
+          <div class="fsz">رسوم التوصيل : مجاناً</div>
+          <div class="fsz"> التوصيل : مباشرة - ساعة بحد اقصى (في قطاع غزة فقط) </div>
+          <div class="quantity" >الكمية المتوفرة : +99</div>
+          <div class="oreder">
+            <select name="" id="" class="sel">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+            <a href="">اضافة الى العربة</a>
+          </div>
+        </div>
+    </div>
+    <div class="tp20"></div>
+    <div class="detlats">
+      <div class="info">
+        <div class="t1">الوصف:</div>
+        <div class="ul" id="toadd">
+          {{prd.bio|safe}}
+        </div>
+      </div>
+    </div>
+    {% if same_Brand_product %}
+      <div class="p4">
+        <div class="t1" dir="rtl">منتجات من نفس الشركة ابل Apple :</div>
+        <div dir="rtl" class="swiper  s2 n1 ">
+          <div class="swiper-wrapper ">
+            {% for item in same_Brand_product %}
+              {% if item != prd %}
+                <div class="swiper-slide s2 ">
+                    <a href="{{item.slug }}" class="sld">
+                      <div class="cr ">
+                          <div class="img"><img src="{{item.img.url}}" alt=""></div>
+                          <div class="tex">
+                            <div class="name">{{item.bio}}</div>
+                            <div class="prs"><span> {{item.price}}₪</span></div>
+                            {% if item.lprice %}
+                              <div class="prs2"><span> {{item.lprice}}₪</span><h2>خصم %{{item.Discount}}</h2></div>
+                            {% endif %}
+                              <div class="cpname">{{item.Brand}}</div>
+                            <div class="dmn"><span> إضافة للسلة</span></div>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        {% if same_Brand_product|length > 10 %}
+          <a href="#" class="swp-btn">شاهد الكل</a>
+        {% endif %}
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp1 = ".swiper.s2.n1"
+          var slides_nu1 = Math.floor(screen.width / document.querySelector(`${swp1} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp1, {
+            slidesPerView: slides_nu1,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu1,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp1} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+
+            },
+            navigation: {
+              nextEl: `${swp1} .swiper-button-next`,
+              prevEl: `${swp1} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+    {% endif %}
+    {% if same_cart_product %}
+      <div class="p4">
+        <div class="t1" dir="rtl"> اشترى الاخرون معه :</div>
+        <div dir="rtl" class="swiper  s2 n1 ">
+          <div class="swiper-wrapper ">
+            {% for item in same_cart_product %}
+              {% if item != prd %}
+                <div class="swiper-slide s2 ">
+                    <a href="{{item.slug }}" class="sld">
+                      <div class="cr ">
+                          <div class="img"><img src="{{item.img.url}}" alt=""></div>
+                          <div class="tex">
+                            <div class="name">{{item.bio}}</div>
+                            <div class="prs"><span> {{item.price}}₪</span></div>
+                            {% if item.lprice %}
+                              <div class="prs2"><span> {{item.lprice}}₪</span><h2>خصم %{{item.Discount}}</h2></div>
+                            {% endif %}
+                              <div class="cpname">{{item.Brand}}</div>
+                            <div class="dmn"><span> إضافة للسلة</span></div>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        {% if same_Brand_product|length > 10 %}
+          <a href="#" class="swp-btn">شاهد الكل</a>
+        {% endif %}
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp1 = ".swiper.s2.n1"
+          var slides_nu1 = Math.floor(screen.width / document.querySelector(`${swp1} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp1, {
+            slidesPerView: slides_nu1,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu1,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp1} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+
+            },
+            navigation: {
+              nextEl: `${swp1} .swiper-button-next`,
+              prevEl: `${swp1} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+    {% endif %}
+    {% if same_category_product %}
+      <div class="p4">
+        <div class="t1" dir="rtl">منتجات مشابها :</div>
+        <div dir="rtl" class="swiper  s2 n2 ">
+          <div class="swiper-wrapper ">
+            {% for item in same_category_product %}
+                {% if item != prd %}
+                <div class="swiper-slide s2 ">
+                    <a href="{{item.slug }}" class="sld">
+                      <div class="cr ">
+                          <div class="img"><img src="{{item.img.url}}" alt=""></div>
+                          <div class="tex">
+                            <div class="name">{{item.bio}}</div>
+                            <div class="prs"><span> {{item.price}}₪</span></div>
+                            {% if item.lprice %}
+                              <div class="prs2"><span> {{item.lprice}}₪</span><h2>خصم %{{item.Discount}}</h2></div>
+                            {% endif %}
+                              <div class="cpname">{{item.Brand}}</div>
+                            <div class="dmn"><span> إضافة للسلة</span></div>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        {% if same_category_product|length > 10 %}
+          <a href="#" class="swp-btn">شاهد الكل</a>
+        {% endif %}
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp2 = ".swiper.s2.n2"
+          var slides_nu2 = Math.floor(screen.width / document.querySelector(`${swp2} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp2, {
+            slidesPerView: slides_nu2,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu2,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp2} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+
+            },
+            navigation: {
+              nextEl: `${swp2} .swiper-button-next`,
+              prevEl: `${swp2} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+    {% endif %}
+    {% if same_suggested_products_category_product %}
+      <div class="p4">
+        <div class="t1" dir="rtl">قد تحتاج :</div>
+        <div dir="rtl" class="swiper  s2 n2 ">
+          <div class="swiper-wrapper ">
+            {% for item in same_suggested_products_category_product %}
+              <div class="swiper-slide s2 ">
+                  <a href="" class="sld">
+                    <div class="cr ">
+                        <div class="img"><img src="{{item.img.url}}" alt=""></div>
+                        <div class="tex">
+                          <div class="name">{{item.bio}}</div>
+                          <div class="prs"><span> {{item.price}}₪</span></div>
+                          {% if item.lprice %}
+                            <div class="prs2"><span> {{item.lprice}}₪</span><h2>خصم %{{item.Discount}}</h2></div>
+                          {% endif %}
+                            <div class="cpname">{{item.Brand}}</div>
+                          <div class="dmn"><span> إضافة للسلة</span></div>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+            {% endfor %}
+        </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        
+        {% if same_suggested_products_category_product|length > 10 %}
+          <a href="#" class="swp-btn">شاهد الكل</a>
+        {% endif %}
+        
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp3 = ".swiper.s2.n2"
+          var slides_nu3 = Math.floor(screen.width / document.querySelector(`${swp3} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp3, {
+            slidesPerView: slides_nu3,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu3,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp3} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+
+            },
+            navigation: {
+              nextEl: `${swp3} .swiper-button-next`,
+              prevEl: `${swp3} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+    {% endif %}
+
+{% endblock body %}

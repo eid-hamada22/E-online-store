@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+<div class="p4">
+    <div class="t1">خصومات كبيرة ومتنوعة</div>
+    <div dir="rtl" class="swiper  s2 ">
+      <div class="swiper-wrapper ">
+        <div class="swiper-slide s2 ">
+          <a href="" class="sld">
+            <div class="cr wd7">
+                <div class="img"><img src="img/products/71zny7BTRlL._AC_UY218_.jpg" alt=""></div>
+                <div class="tex">
+                  <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                  <div class="prs"><span> 800ش</span></div>
+                  <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                  <a href="#" class="cpname">apple</a>
+                  <div class="dmn"><span> توصيل سريع</span></div>
+                </div>
+              </div>
+          </a>
+        </div>
+    </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script type="module">
+      var swiper = new Swiper(".swiper.s2", {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        slidesPerGroup: 5,
+        freeMode: true,
+        loopFillGroupWithBlank: true,
+        grabCursor: true,
+  
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        //pagination: {
+          //el: ".swiper-pagination",
+          //type: "fraction",
+          //type: "progressbar",
+          //clickable: true,
+        // },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+      });
+    </script>
+        <div class="btn"><button class="btn1">شاهد جميع العناصر</button></div>
+  </div>
+
+  <style>
+    .p4{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+    .p4 .t1{
+        font-size: 1.7em;
+        
+    }
+    
+    .sld{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: thin solid rgba(0,0,0,.12);
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        direction: rtl;
+        height: 415px;
+    }
+    .sld .cr{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .sld .cr .img{
+        width: 100%;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sld .cr .img img{
+        max-width: 100%;
+        max-height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    
+    }
+    .sld .txt {
+        font-size: 1.3em;
+        padding: 10px;
+    }
+    .sld .cr .tex .name{
+      line-height: 1.1em;
+    }
+    
+    
+    .swiper.s2 {
+        width: 100% !important;
+        padding-top: 20px !important;
+        padding-bottom: 50px !important;
+    }
+    
+    .swiper-slide.s2 {
+        background-position: center !important;
+        background-size: cover !important;
+        width: 240px !important;
+        background: #fff !important;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2) !important;
+        border-radius: 15px !important;
+    }
+    
+    .swiper-slide.s2.swiper-slide-visible.swiper-slide-active {
+        filter: blur(0px) !important;
+        background: #fff !important;
+    }
+    
+    .swiper-3d .swiper-slide-shadow-left,
+    .swiper-3d .swiper-slide-shadow-right {
+        background-image: none;
+    }
+    .swiper-horizontal>.swiper-scrollbar {
+      bottom: 30px !important;
+    }
+  </style>

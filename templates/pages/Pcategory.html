@@ -1,0 +1,1405 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/Pcategory.css' %}" />
+
+{% endblock css %}
+
+{% block body %}
+    <div class=""><img src="{% static 'img/banners/ar_strip-00.png' %}" width="100%" alt=""></div>
+    <div class="card1 dsm">
+        <div class="ta">الاقسام الرئيسة</div>
+        <div class="rc">
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/dior.jpg' %}"alt=""><span>عطور رجالية ونسائية</span></a></div>
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/iPhone-13.jpg' %}"alt=""><span>هواتف ذكية</span></a></div>
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/cam.jpg' %}"alt=""><span>معدات التصوير</span></a></div>
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/ps5-2.png' %}"alt=""><span>اجهزة الالعاب والالعاب</span></a></div>
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/Apple-Prd-Mac.jpg' %}"alt=""><span>الابتوبات وملحقاتها</span></a></div>
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/Apple-Prd-iPad-2022.jpg' %}"alt=""><span>اجهزة الايباد</span></a></div>
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/Apple-Watch-28.jpg' %}"alt=""><span>الساعات الذكية</span></a></div>
+          <div class="cr"><a href=""><img src="{% static 'img/categorys/dior.jpg' %}"alt=""><span>عطور رجالية ونسائية</span></a></div>
+
+      </div>
+      <!-- <div class="btn"><button class="btn1" style="background: #F0F0F0;">شاهد جميع العناصر</button></div> -->
+      </div>
+      <div class="dsc">
+        <div class="p4">
+          <div class="t1">الاقسام الرئيسة</div>
+          <div dir="rtl" class="swiper  s2 n1">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide s1">
+                <div class="cr"><a href=""><img src="{% static 'img/products/Y0785220_F078524009_E01_GHC.jpg"'%} alt=""><span>عطور رجالية ونسائية</span></a></div>
+                <div class="cr"><a href=""><img src="{% static 'img/products/iphone-13-mini-blue-select-2021.png"'%} alt=""><span>هواتف ذكية</span></a></div>
+              </div>
+              <div class="swiper-slide s1">
+                <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg"'%} alt=""><span>معدات التصوير</span></a></div>
+                <div class="cr"><a href=""><img src="{% static 'img/products/ps5-2.png"'%} alt=""><span>اجهزة الالعاب والالعاب</span></a></div>
+              </div>
+              <div class="swiper-slide s1">
+                <div class="cr"><a href=""><img src="{% static 'img/products/apple-macbook-air-13-m1-8gb-256gb-ssd-laptop.jpg"'%} alt=""><span>الابتوبات وملحقاتها</span></a></div>
+                <div class="cr"><a href=""><img src="{% static 'img/products/youef1-640x480.jpg"'%} alt=""><span>الكتب</span></a></div>
+              </div>
+  
+              <div class="swiper-slide s1">
+                <div class="cr"><a href=""><img src="{% static 'img/products/14df0d210e44e2526441eeb1024ad89a.jpg"'%} alt=""><span>معدات التصوير</span></a></div>
+                <div class="cr"><a href=""><img src="{% static 'img/products/ps5-2.png"'%} alt=""><span>اجهزة الالعاب والالعاب</span></a></div>
+              </div>
+
+  
+
+          </div>
+  
+            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+          
+          <script type="module">
+            var swp1 = ".swiper.s2.n1"
+            var slides_nu1 = Math.floor(screen.width / document.querySelector(`${swp1} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+            var swiper = new Swiper(swp1, {
+              slidesPerView: slides_nu1,
+              spaceBetween: 10,
+              slidesPerGroup: slides_nu1,
+              freeMode: true,
+              loopFillGroupWithBlank: true,
+              grabCursor: true,
+      
+              //pagination: {
+                //el: ".swiper-pagination",
+                //type: "fraction",
+                //type: "progressbar",
+                //clickable: true,
+              // },
+              scrollbar: {
+                el: `${swp1} .swiper-scrollbar`,
+                hide: false,
+                draggable: true,
+  
+              },
+              navigation: {
+                nextEl: `${swp1} .swiper-button-next`,
+                prevEl: `${swp1} .swiper-button-prev`,
+              },
+            });
+          </script>
+              
+        </div>
+      </div>
+
+      <div class="p4">
+        <div class="t1">خصومات على المنتجات</div>
+        <div dir="rtl" class="swiper  s2 n2">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+          </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <a href="#" class="swp-btn">شاهد الكل</a>
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp2 = ".swiper.s2.n2"
+          var slides_nu2 = Math.floor(screen.width / document.querySelector(`${swp2} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp2, {
+            slidesPerView: slides_nu2,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu2,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp2} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+    
+            },
+            navigation: {
+              nextEl: `${swp2} .swiper-button-next`,
+              prevEl: `${swp2} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+
+      <div class="p4">
+        <div class="t1">احدث الجولات</div>
+        <div dir="rtl" class="swiper  s2 n3">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+          </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <a href="#" class="swp-btn">شاهد الكل</a>
+        
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp3 = ".swiper.s2.n3"
+          var slides_nu3 = Math.floor(screen.width / document.querySelector(`${swp3} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp3, {
+            slidesPerView: slides_nu3,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu3,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp3} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+    
+            },
+            navigation: {
+              nextEl: `${swp3} .swiper-button-next`,
+              prevEl: `${swp3} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+
+      <div class="p4">
+        <div class="t1">اقوى الابتوبات</div>
+        <div dir="rtl" class="swiper  s2 n4">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+          </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <a href="#" class="swp-btn">شاهد الكل</a>
+        
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp4 = ".swiper.s2.n4"
+          var slides_nu4 = Math.floor(screen.width / document.querySelector(`${swp4} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp4, {
+            slidesPerView: slides_nu4,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu4,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp4} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+    
+            },
+            navigation: {
+              nextEl: `${swp4} .swiper-button-next`,
+              prevEl: `${swp4} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+
+      <div class="p4">
+        <div class="t1">اجزاء الكمبيوتر</div>
+        <div dir="rtl" class="swiper  s2 n5">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+    
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/71zny7BTRlL._AC_UY218_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">سماعة ابل ايربود برو الاصدرا الثالث apple Airbods pro3...  </div>
+                      <div class="prs"><span> 800ش</span></div>
+                      <div class="prs2"><span> 1000ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.png"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">جهاز الالعاب بلاي ستيشن 5 مع 2 ذراع تحكم sony ps5...  </div>
+                      <div class="prs"><span> 2500ش</span></div>
+                      <div class="prs2"><span> 3000ش</span><h2>خصم %10</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81IwMu10VfL._AC_UL320_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">هاتف ابل ايفون برو ماكس جديد 256 جيجا لون ذهبي...    </div>
+                      <div class="prs"><span> 2100ش</span></div>
+                      <div class="prs2"><span> 2500ش</span><h2>خصم %12</h2></div>
+                      <div class="cpname">apple</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/375x500.31861.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">عطر رجالي ديور سوفاج 350مل اصلي Dior sauvage Perfume...   </div>
+                      <div class="prs"><span> 300ش</span></div>
+                      <div class="prs2"><span> 400ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">Dior</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="swiper-slide s2 ">
+              <a href="" class="sld">
+                <div class="cr ">
+                    <div class="img"><img src="{% static 'img/products/81A6hGtMGoL._SL1500_.jpg"'%} alt=""></div>
+                    <div class="tex">
+                      <div class="name">شريط العاب فيفا 2022 لجهاز بلاي ستيشن 4 FIFA 22  ps4    </div>
+                      <div class="prs"><span> 120ش</span></div>
+                      <div class="prs2"><span> 150ش</span><h2>خصم %15</h2></div>
+                      <div class="cpname">sony</div>
+                      <div class="dmn"><span> إضافة للسلة</span></div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+          </div>
+    
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <a href="#" class="swp-btn">شاهد الكل</a>
+        
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script type="module">
+          var swp5 = ".swiper.s2.n5"
+          var slides_nu5 = Math.floor(screen.width / document.querySelector(`${swp5} .swiper-wrapper .swiper-slide`).getBoundingClientRect().width);
+          var swiper = new Swiper(swp5, {
+            slidesPerView: slides_nu5,
+            spaceBetween: 10,
+            slidesPerGroup: slides_nu5,
+            freeMode: true,
+            loopFillGroupWithBlank: true,
+            grabCursor: true,
+    
+            //pagination: {
+              //el: ".swiper-pagination",
+              //type: "fraction",
+              //type: "progressbar",
+              //clickable: true,
+            // },
+            scrollbar: {
+              el: `${swp5} .swiper-scrollbar`,
+              hide: false,
+              draggable: true,
+    
+            },
+            navigation: {
+              nextEl: `${swp5} .swiper-button-next`,
+              prevEl: `${swp5} .swiper-button-prev`,
+            },
+          });
+        </script>
+      </div>
+{% endblock body %}

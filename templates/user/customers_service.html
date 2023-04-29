@@ -1,0 +1,473 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/user.css' %}" />
+
+{% endblock css %}
+
+{% block body %}
+
+
+  <div class="linkes">
+    <div class="fln">
+        <a href="" class="link ac">
+            <div class="fimg"><img src="{% static 'img/icons/customer-service.png' %}" alt=""></div>
+            <div class="datl">
+                <span class="bname " style="font-size:1.7em;">خدمة العملاء</span>
+                <div class="bio ar2">احصل على المساعدة من الخدمة</div>
+            </div>
+        </a>
+
+
+        <div class="card">
+          <h2>معلومات التواصل معنا</h2>
+          <div class="btdas">
+          <label class="input">
+            <a href="tel:056668064" class="input__field"  >056668064</a>
+            <span class="input__label">رقم الهاتف</span>
+          </label>
+
+          <label class="input">
+            <a href="mailto:gmali@gmail.com" class="input__field"  >gmali@gmail.com</a>
+            <span class="input__label">البريد الالكتروني</span>
+          </label>
+
+          <label class="input">
+            <a href="tel:056668064" class="input__field"  >056668064</a>
+            <span class="input__label">واتساب</span>
+          </label>
+
+
+
+        </div>
+
+        </div>
+
+
+
+        <style>
+          @import url("https://rsms.me/inter/inter.css");
+
+          .form-check.form-switch{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            font-size: 1.1em;
+            text-align: right;
+            padding-left: 0em;
+            width: 100%;
+            justify-content: flex-end;
+          }
+          .form-check-label{
+            margin-right: 50px;
+            width: 100%;
+          }
+
+
+ .card {
+	 background: white;
+	 padding: calc(4 * 0.5rem);
+	 margin-top: calc(4 * 0.5rem);
+	 border-radius: 4px;
+	 border: 3px solid var(#fab700, currentColor);
+	 box-shadow: 0.5rem 0.5rem 0 var(#fab700, currentColor);
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+}
+.btdas{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+ .card--inverted {
+	 --color-background: #212121;
+	 color: white;
+}
+ .card--accent {
+	 --color-background: rgb(56, 102, 223);
+	 --color-accent: white;
+	 color: #212121;
+}
+ .card *:first-child {
+	 margin-top: 0;
+}
+ .l-design-widht {
+	 max-width: 40rem;
+	 padding: 1rem;
+}
+ .input {
+	 position: relative;
+   margin: 10px;
+}
+ .input__label {
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+	 padding: calc(0.5rem * 0.75) calc(0.5rem * 0.5);
+	 margin: calc(0.5rem * 0.75 + 3px) calc(0.5rem * 0.5);
+	 background: pink;
+	 white-space: nowrap;
+	 transform: translate(0, 0);
+	 transform-origin: 0 0;
+	 background: white;
+	 transition: transform 120ms ease-in;
+	 font-weight: bold;
+	 line-height: 1.2;
+}
+ .input__field {
+	 box-sizing: border-box;
+	 display: block;
+	 width: 300px;
+	 border: 3px solid currentColor;
+	 padding: calc(0.5rem * 1.5) 0.5rem;
+	 color: currentColor;
+	 background: transparent;
+	 border-radius: 4px;
+   direction: rtl;
+   text-align: right;
+   
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ .input__field:focus + .input__label, .input__field:not(:placeholder-shown) + .input__label {
+	 transform: translate(0.25rem, -65%) scale(0.8);
+	 color: rgb(56, 102, 223);
+}
+ .button-group {
+  margin-right: calc(0.7rem );
+   color: #fff;
+}
+ button {
+	 color: currentColor;
+	 padding: 0.5rem calc(0.5rem * 2);
+	 background: rgb(56, 102, 223);
+	 border: none;
+	 border-radius: 4px;
+	 font-weight: 900;
+}
+ button[type="reset"] {
+	 background: white;
+	 font-weight: 200;
+}
+ button + button {
+	 margin-left: calc(0.5rem * 2);
+}
+
+ .hidden {
+	 display: none;
+}
+ 
+        </style>
+    </div>
+   </div>
+
+   <br><br>
+   <div class="card si">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+      </style>
+      <ul class="ul">
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span> - Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <span> - Whatsapp</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <span> - Gmail</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span> - Instagram</span>
+          </a>
+        </li>
+        <style>
+          .card.si {
+          margin:0;
+          padding:0;
+          background:#ccc;
+          font-family: 'Roboto Condensed', sans-serif;
+          width: 100%;
+          height: 180px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .ul {
+            display:flex;
+            margin:0;
+            padding:0;
+        }
+        
+        .ul li {
+          list-style:none;
+          margin:0 5px;
+        }
+        
+        .ul li a .fa {
+          font-size: 40px;
+          color: #262626;
+          line-height:80px;
+          transition: .5s;
+          padding-right: 14px;
+        }
+        
+        .ul li a span {
+          padding:0;
+          margin:0;
+          position:absolute;
+          top: 30px;
+          color: #262626;
+          letter-spacing: 4px;
+          transition: .5s;
+        }
+        
+        .ul li a {
+          text-decoration: none;
+          display:absolute;
+          display:block;
+          width:210px;
+          height:80px;
+          background: #fff;
+          text-align:left;
+          padding-left: 20px;
+          transform: rotate(-30deg) skew(25deg) translate(0,0);
+          transition:.5s;
+          box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+        }
+        .ul li a:before {
+          content: '';
+          position: absolute;
+          top:10px;
+          left:-20px;
+          height:100%;
+          width:20px;
+          background: #b1b1b1;
+          transform: .5s;
+          transform: rotate(0deg) skewY(-45deg);
+        }
+        .ul li a:after {
+          content: '';
+          position: absolute;
+          bottom:-20px;
+          left:-10px;
+          height:20px;
+          width:100%;
+          background: #b1b1b1;
+          transform: .5s;
+          transform: rotate(0deg) skewX(-45deg);
+        }
+        
+        .ul li a:hover {
+          transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+          box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+        }
+        
+        .ul li:hover .fa {
+          color:#fff;
+        }
+        
+        .ul li:hover span {
+          color:#fff;
+        }
+        
+        .ul li:hover:nth-child(1) a{
+          background: #3b5998;
+        }
+        .ul li:hover:nth-child(1) a:before{
+          background: #365492;
+        }
+        .ul li:hover:nth-child(1) a:after{
+          background: #4a69ad;
+        }
+        
+        .ul li:hover:nth-child(2) a{
+          background: #075E54;
+        }
+        .ul li:hover:nth-child(2) a:before{
+          background: #128C7E;
+        }
+        .ul li:hover:nth-child(2) a:after{
+          background: #128C7E;
+        }
+        
+        .ul li:hover:nth-child(3) a{
+          background: #dd4b39;
+        }
+        .ul li:hover:nth-child(3) a:before{
+          background: #b33a2b;
+        }
+        .ul li:hover:nth-child(3) a:after{
+          background: #e66a5a;
+        }
+        
+        .ul li:hover:nth-child(4) a{
+          background: #e4405f;
+        }
+        .ul li:hover:nth-child(4) a:before{
+          background: #d81c3f;
+        }
+        .ul li:hover:nth-child(4) a:after{
+          background: #e46880;
+        }
+  @media screen and (max-width: 767px) {
+    .ul {
+      flex-direction: column;
+    }
+    .card.si {
+      height: auto;
+    }
+    .ul li {
+      list-style:none;
+      margin:20px 5px;
+    }
+  }
+      </style>
+  </div>
+  <style>
+    .moves{
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .moves .rig,.lef{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .tlt{
+      font-size: 1.7em;
+      margin: 10px 0px;
+    }
+    table {
+      border-spacing: 1;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 95%;
+      margin: 0 auto;
+      position: relative;
+    }
+    table * {
+      position: relative;
+    }
+    tbody tr {
+      font-family: OpenSans-Regular;
+      font-size: 15px;
+      color: gray;
+      line-height: 1.2;
+      font-weight: unset;
+    }
+    table thead tr {
+      height: 60px;
+      background: #232f3e;
+      color: #fff;
+    }
+    table tbody tr {
+      height: 50px;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+    .column1 {
+      width: 260px;
+      padding-left: 40px;
+  }
+  table td, table th {
+      text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    .moves{
+      flex-direction: column;
+    }
+
+    .linkes .fln {
+      width: 100%;
+    }
+    .linkes .link {
+      width: 80%;
+    }
+    .card {
+      width: 95%;
+    }
+    .btdas {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .button-group {
+      margin-top: calc(0.5rem * 2.5);
+    }
+  }
+
+  </style>
+
+  <div class="linkes">
+    <div class="fln">
+  <div class="card">
+    <h2>ارسل لنا رسالة</h2>
+    <div class="btdas">
+    <label class="input">
+      <input type="text" class="input__field" placeholder=" " />
+      <span class="input__label">الاسم</span>
+    </label>
+
+    <label class="input">
+      <input type="text" class="input__field" placeholder=" " />
+      <span class="input__label">البريد الالكتروني</span>
+    </label>
+
+    <label class="input">
+      <input type="hidden" class="input__field"  placeholder=" "/>
+      <span class="input__label"></span>
+    </label>
+
+
+    <label class="input">
+      <input type="text" class="input__field" placeholder=" " />
+      <span class="input__label">العنوان</span>
+    </label>
+
+    <label class="input">
+      <textarea type="text" class="input__field" placeholder=" "></textarea>
+      <span class="input__label">الرسالة</span>
+    </label>
+  </div>
+  <div class="button-group">
+    <button>تعديل</button>
+  </div>
+  </div>
+  </div>
+</div>
+  <br><br><br>
+
+{% endblock body %}
+
+
+
+
